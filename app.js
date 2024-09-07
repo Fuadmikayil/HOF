@@ -31,8 +31,8 @@ console.log(newNumber9);
 
 let isBigger = numbers.every(item => item >0)
     console.log(isBigger);
-
-/*
+ 
+/* metod
 let sum2 = numbers.reduce((acc, cur) => acc + cur, 0)
 console.log(sum2);
 /*
