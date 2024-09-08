@@ -108,6 +108,11 @@ console.log(totalSalary);
 const richWorkers2 = workers.filter(item => item.isMarry );
 richWorkers2.map(item => console.log(item.fullName +item.specaiality));
 */
-const response =fetch("https://jsonplaceholder.typicode.com/users")
+const demo = async() => {
+    const response =fetch("https://jsonplaceholder.typicode.com/users")
+    console.log(response);
+
+}
+demo()
 ///.then((response ) => response.json())
 ///.then((data) => console.log(data))
