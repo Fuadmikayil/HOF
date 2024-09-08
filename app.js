@@ -74,24 +74,28 @@ console.log(newList);
 /////////////////////////////////////
 const workers = [
     {
+        id: 1,
         fullName: "Zahid Vahabzade",
         isMarry: true,
-        salary: 7000,
         specaiality: "Full Stack dev",
     },
     {
+        id: 2,
         fullName: "Fuad mikayılov",
         isMarry: true,
-        salary: 5000,
         specaiality: "DevOpsd",
     },
     {
+        id: 3,
         fullName: "Orxan Eliyev",
         isMarry: true,
-        salary: 3000,
         specaiality: "Full Stack dev",
     },
 ]
 workers.map(item => console.log(item.salary))
+//////////////////////////////
 const richWorkers = workers.filter(item => item.salary > 4000);
 console.log(richWorkers);
+////////////////////////
+const ogru = workers.find(workers => workers.id == 3);
+console.log(`ogru ${ogru}`);
