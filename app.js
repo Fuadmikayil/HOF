@@ -82,7 +82,7 @@ const workers = [
     {
         id: 2,
         fullName: "Fuad mikayılov",
-        isMarry: true,
+        isMarry: false,
         specaiality: "DevOpsd",
     },
     {
@@ -92,6 +92,7 @@ const workers = [
         specaiality: "Full Stack dev",
     },
 ]
+/*
 workers.map(item => console.log(item.salary))
 //////////////////////////////
 const richWorkers = workers.filter(item => item.salary > 4000);
@@ -99,3 +100,9 @@ console.log(richWorkers);
 ////////////////////////
 const ogru = workers.find(workers => workers.id == 3);
 console.log(`ogru ${ogru}`);
+//////////////reduce
+const totalSalary = workers.reduce((acc, item) => acc + item.id, 0)
+console.log(totalSalary);
+*/
+const richWorkers2 = workers.filter(item => item.isMarry );
+richWorkers2.map(item => console.log(item.fullName +item.specaiality));
