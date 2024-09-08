@@ -104,5 +104,6 @@ console.log(`ogru ${ogru}`);
 const totalSalary = workers.reduce((acc, item) => acc + item.id, 0)
 console.log(totalSalary);
 */
+//////////////////////////////
 const richWorkers2 = workers.filter(item => item.isMarry );
 richWorkers2.map(item => console.log(item.fullName +item.specaiality));
