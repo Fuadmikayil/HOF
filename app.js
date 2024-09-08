@@ -103,7 +103,11 @@ console.log(`ogru ${ogru}`);
 //////////////reduce
 const totalSalary = workers.reduce((acc, item) => acc + item.id, 0)
 console.log(totalSalary);
-*/
+
 //////////////////////////////
 const richWorkers2 = workers.filter(item => item.isMarry );
 richWorkers2.map(item => console.log(item.fullName +item.specaiality));
+*/
+const response =fetch("https://jsonplaceholder.typicode.com/users")
+///.then((response ) => response.json())
+///.then((data) => console.log(data))
