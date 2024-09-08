@@ -29,9 +29,9 @@ for (let i = numbers.length - 1; i >= 0; i--) {
 }
 console.log(newNumber9);
 
-let isBigger = numbers.every(item => item >0)
-    console.log(isBigger);
- 
+let isBigger = numbers.every(item => item > 0)
+console.log(isBigger);
+
 /* metod
 let sum2 = numbers.reduce((acc, cur) => acc + cur, 0)
 console.log(sum2);
@@ -71,3 +71,27 @@ console.log(newList);
 //ededlerin hamsını topla
 
 //ededlerin hamsını 5-den böyükdürmü
+/////////////////////////////////////
+const workers = [
+    {
+        fullName: "Zahid Vahabzade",
+        isMarry: true,
+        salary: 7000,
+        specaiality: "Full Stack dev",
+    },
+    {
+        fullName: "Fuad mikayılov",
+        isMarry: true,
+        salary: 5000,
+        specaiality: "DevOpsd",
+    },
+    {
+        fullName: "Orxan Eliyev",
+        isMarry: true,
+        salary: 3000,
+        specaiality: "Full Stack dev",
+    },
+]
+workers.map(item => console.log(item.salary))
+const richWorkers = workers.filter(item => item.salary > 4000);
+console.log(richWorkers);
