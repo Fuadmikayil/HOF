@@ -119,8 +119,37 @@ demo()
 ///.then((data) => console.log(data))
 //
 
-console.log(`hakuna`);
-setTimeout(() => {
-    console.log("Matata");
-})
-console.log("HUBA MUBA");
+//console.log(`hakuna`);
+//setTimeout(() => {
+//    console.log("Matata");
+//})
+//console.log("HUBA MUBA");
+///////////////class
+/*
+const demo = () => {
+    return new Promise((resolve, reject) => setTimeout(resolve, 5000));
+
+};
+const memo = async() => {
+    console.log("Hakuna");
+    await demo();
+    console.log("matata");
+    console.log("Huba mubna");
+}
+memo()
+*/
+///////
+class User{
+    constructor(x,y,z){
+        this.name = x;
+        this.surname = y;
+        this.age = z;
+
+    }
+}
+const user1 = new User("Zahid","Vahabzade",12)
+const user2 = new User("Fuad","Mikayılov",14)
+const user3 = new User("Orxan","Eliyev",17)
+console.log(user1);
+console.log(user2);
+console.log(user3);
