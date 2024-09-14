@@ -66,7 +66,7 @@ for (let j = 0; j < numbers.length; j++) {
 }
 
 console.log(newList);
-*/
+
 //ededlerin sırasın tersine cevir
 //ededlerin hamsını topla
 
@@ -91,7 +91,7 @@ const workers = [
         isMarry: true,
         specaiality: "Full Stack dev",
     },
-]
+]*/
 /*
 workers.map(item => console.log(item.salary))
 //////////////////////////////
@@ -107,12 +107,20 @@ console.log(totalSalary);
 //////////////////////////////
 const richWorkers2 = workers.filter(item => item.isMarry );
 richWorkers2.map(item => console.log(item.fullName +item.specaiality));
-*/
-const demo = async() => {
-    const response =fetch("https://jsonplaceholder.typicode.com/users")
+
+const demo = async () => {
+    const response = fetch("https://jsonplaceholder.typicode.com/users")
     console.log(response);
 
 }
 demo()
+*/
 ///.then((response ) => response.json())
 ///.then((data) => console.log(data))
+//
+
+console.log(`hakuna`);
+setTimeout(() => {
+    console.log("Matata");
+})
+console.log("HUBA MUBA");
