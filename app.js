@@ -146,10 +146,15 @@ class User{
         this.age = z;
 
     }
+
+
 }
-const user1 = new User("Zahid","Vahabzade",12)
-const user2 = new User("Fuad","Mikayılov",14)
-const user3 = new User("Orxan","Eliyev",17)
-console.log(user1);
-console.log(user2);
-console.log(user3);
+class Director extends Person{
+    constructor(name,surname,age,lacation,specialty,salary){
+        super(name,surname,age,lacation);
+        this.specialty = specialty;
+        this.salary = salary
+    }
+}
+const director1 = new Director("Zahid","Vahabzade",12,"Bakı","Devops",1200)
+console.log(director1);
